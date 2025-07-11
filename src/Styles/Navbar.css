@@ -1,0 +1,76 @@
+/* Navbar principal */
+.NavBarSocial {
+  background-color: #2cac4a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 1rem;
+}
+
+/* Imagen de usuario */
+.Usuario-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.Usuario-img:hover {
+  transform: scale(1.05);
+}
+
+/* Contenedor de enlaces de navegación */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 7.5rem;
+}
+
+/* Estilo de los enlaces individuales */
+.navbar-link {
+  color: #f8f9fa;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.navbar-link:hover,
+.navbar-link.active {
+  color: #ffe066;
+}
+
+/* Contenedor del buscador (corregido de "sarch-container") */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Input de búsqueda */
+.Search {
+  width: 440px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  transition: box-shadow 0.2s ease;
+}
+.Search:focus {
+  box-shadow: 0 0 0 2px rgba(255, 224, 102, 0.6);
+}
+
+/* Remueve el triángulo del dropdown Bootstrap */
+#dropdown-user::after {
+  display: none !important;
+}
+
+/* Título del navbar */
+#title-navbar {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-right: 2rem;
+  white-space: nowrap;
+}

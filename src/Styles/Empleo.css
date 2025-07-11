@@ -1,0 +1,92 @@
+.empleo-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todo el contenido */
+}
+
+.empleo-title {
+  margin-top: 10px;  
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2d3a4b;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.empleo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center; /* Centra horizontalmente */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.empleo-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(44,62,80,0.10);
+  padding: 28px 24px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.empleo-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(44,62,80,0.16);
+}
+
+.empleo-card-title {
+  margin: 0 0 8px 0;
+  color: #2a9e1f;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.empleo-card-empresa {
+  font-weight: 600;
+  color: #2d3a4b;
+  margin-bottom: 2px;
+}
+
+.empleo-card-info {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.empleo-card-desc {
+  margin: 12px 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+.empleo-card-fecha {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.empleo-btn {
+  margin-top: 12px;
+  background: linear-gradient(90deg, #2a9e1f 60%, #2a9e1f 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(26,115,232,0.10);
+  transition: 0.18s, transform 0.18s;
+}
+
+.empleo-btn:hover {
+  background: linear-gradient(90deg, #2a9e1f 60%, #2a9e1f 100%);
+  transform: scale(1.05);
+}
